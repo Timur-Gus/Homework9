@@ -27,12 +27,10 @@ public class Main {
         int[] arr = generateRandomArray();
         int max = -1, min = 200001;
         for (int element : arr) {
-            if(max < element){
+            if (max < element) {
                 max = element;
             }
-        }
-        for (int element : arr) {
-            if(min > element){
+            if (min > element) {
                 min = element;
             }
         }
