@@ -40,7 +40,7 @@ public class Main {
     }
     public static void task3(){
         int[] arr = generateRandomArray();
-        double average = 0;
+        double average;
         int sum = 0;
         for (int element : arr) {
             sum += element;
@@ -48,4 +48,5 @@ public class Main {
         average = (double) sum / 30;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
+
 }
