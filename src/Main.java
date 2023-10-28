@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
             task1();
             task2();
+            task3();
     }
 
 
@@ -36,5 +37,15 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + min +
                 " рублей. Максимальная сумма трат за день составила " + max + " рублей");
+    }
+    public static void task3(){
+        int[] arr = generateRandomArray();
+        double average = 0;
+        int sum = 0;
+        for (int element : arr) {
+            sum += element;
+        }
+        average = (double) sum / 30;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
 }
