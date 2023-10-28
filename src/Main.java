@@ -3,6 +3,7 @@ public class Main {
             task1();
             task2();
             task3();
+            task4();
     }
 
 
@@ -48,5 +49,10 @@ public class Main {
         average = (double) sum / 30;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
-
+    public static void task4(){
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = (reverseFullName.length - 1); i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+    }
 }
